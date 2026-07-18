@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #d9d9d9,
+    #f7f7f7,
+    #cfcfcf
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.typing-card {
+  width: 900px;
+  max-width: 100%;
+  background-color: white;
+  padding: 35px;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.timer {
+  background-color: #dbeafe;
+  color: #2563eb;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* Text */
+
+.text-display {
+  background-color: #f9fafb;
+  border-radius: 12px;
+  padding: 25px;
+
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+
+  min-height: 180px;
+  margin-bottom: 20px;
+}
+
+/* Correct letters */
+
+.correct {
+  color: #22c55e;
+}
+
+/* Incorrect letters */
+
+.incorrect {
+  color: #ef4444;
+  background-color: #fee2e2;
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+  height: 100px;
+
+  resize: none;
+  padding: 15px;
+
+  font-size: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Results */
+
+.results {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+  margin: 25px 0;
+  text-align: center;
+}
+
+.results h3 {
+  font-size: 18px;
+  color: #555;
+}
+
+.results p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-top: 8px;
+}
+
+/* Buttons */
+
+button {
+  display: block;
+  margin: auto;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 30px;
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+  color: white;
+}
+
+.start-btn {
+  background-color: #16a34a;
+}
+
+.start-btn:hover {
+  background-color: #15803d;
+}
+
+.restart-btn {
+  background-color: #2563eb;
+}
+
+.restart-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .typing-card {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .text-display {
+    font-size: 16px;
+  }
+
+  .results {
+    gap: 40px;
+  }
+}
